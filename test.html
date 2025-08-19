@@ -1,23 +1,34 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>广告测试</title>
-</head>
+<meta charset="utf-8"/>
+<title>广告测试</title>
+<style id="nb-ads-css">
+@media (min-width:1280px){
+  .nb-topbar-wrap{position:fixed;top:0;left:0;right:0;z-index:2147483000;display:flex;justify-content:center}
+  .nb-topbar-inner{max-width:1200px;margin:auto}
+  body.nb-has-topbar{padding-top:100px}
+  .nb-stick{position:fixed;top:110px;z-index:2147483000}
+  .nb-left{left:12px}.nb-right{right:12px}
+}
+@media (max-width:1279px){
+  .nb-topbar-wrap,.nb-stick{display:none!important}
+  body.nb-has-topbar{padding-top:0!important}
+}
+.nb-ad{margin:12px 0}
+</style></head>
 <body>
-  <h1>这是测试页面</h1>
-
-  <p>下面是广告：</p>
-
-  <!-- 把广告代码丢进 iframe 里 -->
-  <iframe srcdoc='
-    <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
-    <ins id="1098990" data-width="728" data-height="90"></ins>
-    <script type="text/javascript" data-cfasync="false" async>
+<h1>这是测试页面</h1>
+<p>下面是广告：</p>
+<!-- 把广告代码丢进 iframe 里 -->
+<iframe frameborder="0" height="90" scrolling="no" srcdoc='
+    &lt;script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"&gt;&lt;/script&gt;
+    &lt;ins id="1098990" data-width="728" data-height="90"&gt;&lt;/ins&gt;
+    &lt;script type="text/javascript" data-cfasync="false" async&gt;
       (adsbyjuicy=window.adsbyjuicy||[]).push({adzone:1098990});
-    </script>
-  ' width="728" height="90" frameborder="0" scrolling="no"></iframe>
-
-  <p>广告下方的文字</p>
-</body>
+    &lt;/script&gt;
+  ' width="728"></iframe>
+<p>广告下方的文字</p>
+<div class="nb-ad" id="nb-slot-footer_300x100"><iframe loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" srcdoc="&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset='utf-8'&gt;&lt;/head&gt;&lt;body&gt;&lt;script type=&quot;text/javascript&quot; data-cfasync=&quot;false&quot; async src=&quot;https://poweredby.jads.co/js/jads.js&quot;&gt;&lt;/script&gt;&lt;ins id=&quot;1098991&quot; data-width=&quot;300&quot; data-height=&quot;100&quot;&gt;&lt;/ins&gt;&lt;script type=&quot;text/javascript&quot; data-cfasync=&quot;false&quot; async&gt;(adsbyjuicy = window.adsbyjuicy || []).push({&quot;adzone&quot;:1098991});&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;" style="border:0;width:100%;height:100px;"></iframe></div></body>
 </html>
