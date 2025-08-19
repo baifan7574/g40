@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>广告测试</title>
+</head>
+<body>
+  <h1>这是测试页面</h1>
+
+  <p>下面是广告：</p>
+
+  <!-- 把广告代码丢进 iframe 里 -->
+  <iframe srcdoc='
+    <script type="text/javascript" data-cfasync="false" async src="https://poweredby.jads.co/js/jads.js"></script>
+    <ins id="1098990" data-width="728" data-height="90"></ins>
+    <script type="text/javascript" data-cfasync="false" async>
+      (adsbyjuicy=window.adsbyjuicy||[]).push({adzone:1098990});
+    </script>
+  ' width="728" height="90" frameborder="0" scrolling="no"></iframe>
+
+  <p>广告下方的文字</p>
+</body>
+</html>
